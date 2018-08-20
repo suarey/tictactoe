@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Kosugi');
+
+        body {
+            width: 550px;
+            margin: auto;
+            background: gray;
+        }
+
+        h1 {
+            border-bottom: 1px solid pink;
+            color: white;
+
+        }
+  
+
+        .Square {
+            height: 80px;
+            width: 80px;
+            font-size: 45pt;
+            text-align: center;
+            color: white;
+        }
+
+        #message {
+            font-size: 18pt;
+            font-family: 'Kosugi', sans-serif;
+            color: white;
+        }
+
+        #restart {
+            font-size: 18pt;
+            font-family: 'Gill Sans';
+            color: pink;
+            
+        }
+
+    </style>
+</head>
+<body onLoad="startGame();">
+    <h1>Tic DOPE Toe</h1>
+    <div id="message">Messages here</div>
+    <table border="1">
+<tr>
+    <td class="Square" id="s1" onClick="nextMove(this)"></td>
+    <td class="Square" id="s2" onClick="nextMove(this)"></td>
+    <td class="Square" id="s3" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+    <td class="Square" id="s4" onClick="nextMove(this)"></td>
+    <td class="Square" id="s5" onClick="nextMove(this)"></td>
+    <td class="Square" id="s6" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+    <td class="Square" id="s7" onClick="nextMove(this)"></td>
+    <td class="Square" id="s8" onClick="nextMove(this)"></td>
+    <td class="Square" id="s9" onClick="nextMove(this)"></td>
+</tr>
+    </table>
+    <a href="javascript: startGame();" id="restart">Start Over!</a>
+    <script src="ttt.js"></script>
+</body>
+</html>
